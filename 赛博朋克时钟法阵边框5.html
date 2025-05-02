@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>赛博朋克时钟</title>
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #000;
+            font-family: 'Arial', sans-serif;
+            overflow: hidden;
+        }
+
+        .clocks-wrapper {
+            display: flex;
+            gap: 60px;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px;
+            position: relative;
+            margin-top: -50px;
+        }
+
+        .clock-container {
+            position: relative;
+            width: 600px;
+            height: 800px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 60px;
+            padding-top: 40px;
+        }
+
+        .digital-clock {
+            width: 100%;
+            color: #0ff;
+            font-size: 2em;
+            text-align: center;
+            text-shadow: 0 0 10px #0ff,
+                         0 0 20px #0ff,
+                         0 0 30px #0ff;
+            animation: glow 1.5s ease-in-out infinite alternate;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #0ff;
+            box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+            z-index: 2;
+        }
+
+        .analog-clock {
+            width: 400px;
+            height: 400px;
+            border: none;
+            border-radius: 50%;
+            position: relative;
+            background: linear-gradient(45deg, #1a1a1a, #2a2a2a);
+            box-shadow: 0 0 30px rgba(0, 255, 255, 0.2),
+                       inset 0 0 50px rgba(0, 0, 0, 0.5);
+        }
+
+        .analog-clock::before {
+            content: '';
+            position: absolute;
+            width: 420px;
+            height: 420px;
+            left: -10px;
+            top: -10px;
+            border-radius: 50%;
+            background: 
+                repeating-conic-gradient(
+                    from 0deg,
+                    transparent 0deg 30deg,
+                    rgba(255, 215, 0, 0.1) 30deg 60deg
+                ),
+                conic-gradient(
+                    from 45deg,
+                    transparent 0deg,
+                    rgba(255, 215, 0, 0.2) 90deg,
+                    transparent 180deg,
+                    rgba(255, 107, 0, 0.2) 270deg,
+                    transparent 360deg
+                );
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            z-index: -1;
+            animation: rotateMagicCircle 20s linear infinite;
+        }
+
+        .analog-clock::after {
+            content: '';
+            position: absolute;
+            width: 440px;
+            height: 440px;
+            left: -20px;
+            top: -20px;
+            border-radius: 50%;
+            background: 
+                repeating-radial-gradient(
+                    circle at center,
+                    transparent 0,
+                    transparent 160px,
+                    rgba(255, 215, 0, 0.1) 160px,
+                    transparent 170px
+                ),
+                conic-gradient(
+                    from 0deg,
+                    rgba(255, 215, 0, 0.2) 0deg,
+                    transparent 60deg,
+                    rgba(255, 107, 0, 0.2) 120deg,
+                    transparent 180deg,
+                    rgba(255, 215, 0, 0.2) 240deg,
+                    transparent 300deg,
+                    rgba(255, 107, 0, 0.2) 360deg
+                );
+            z-index: -2;
+            animation: rotateMagicCircleReverse 15s linear infinite;
+        }
+
+        .magic-border {
+            position: absolute;
+            width: 460px;
+            height: 460px;
+            left: -30px;
+            top: -30px;
+            border-radius: 50%;
+            border: 1px dashed rgba(255, 215, 0, 0.3);
+            z-index: -3;
+            animation: rotateMagicCircle 30s linear infinite;
+        }
+
+        .magic-border::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: 
+                repeating-conic-gradient(
+                    from 0deg,
+                    transparent 0deg 15deg,
+                    rgba(255, 215, 0, 0.05) 15deg 30deg
+                );
+            animation: rotateMagicCircleReverse 25s linear infinite;
+        }
+
+        .magic-border::after {
+            content: '';
+            position: absolute;
+            width: calc(100% - 20px);
+            height: calc(100% - 20px);
+            top: 10px;
+            left: 10px;
+            border-radius: 50%;
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            box-shadow: 
+                inset 0 0 20px rgba(255, 215, 0, 0.1),
+                0 0 20px rgba(255, 215, 0, 0.1);
+        }
+
+        .hour-marks {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .hour-marks div {
+            width: 3px;
+            height: 15px;
+            background: #0ff;
+            position: absolute;
+            left: 50%;
+            margin-left: -1px;
+            transform-origin: 50% 190px;
+        }
+
+        .hour-marks div.minute-mark {
+            width: 2px;
+            height: 8px;
+            background: rgba(0, 255, 255, 0.6);
+            box-shadow: 0 0 5px rgba(0, 255, 255, 0.4);
+        }
+
+        .hour-numbers {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        .hour-number {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            color: #ffeb3b;
+            font-size: 1.8em;
+            font-weight: bold;
+            text-shadow: 0 0 5px #ffd700,
+                        0 0 10px #ffa500,
+                        0 0 15px #ff8c00,
+                        0 0 20px #ff4500;
+            transform-origin: center;
+            font-family: 'Arial', sans-serif;
+            margin-left: -25px;
+            margin-top: -25px;
+            animation: numberGlow 2s ease-in-out infinite alternate;
+        }
+
+        .hands {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        .hand {
+            position: absolute;
+            bottom: 50%;
+            left: 50%;
+            transform-origin: 50% 100%;
+            background: #0ff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+        }
+
+        .hour {
+            width: 4px;
+            height: 25%;
+            background: #ff0080;
+        }
+
+        .minute {
+            width: 3px;
+            height: 35%;
+            background: #00ff9d;
+        }
+
+        .second {
+            width: 2px;
+            height: 40%;
+            background: #0ff;
+        }
+
+        .center-dot {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: #0ff;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 0 10px #0ff;
+        }
+
+        .countdown-container {
+            position: absolute;
+            top: 190px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            background: rgba(0, 0, 0, 0.8);
+            padding: 12px 20px;
+            border-radius: 10px;
+            border: 2px solid #ffd700;
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.3),
+                       inset 0 0 20px rgba(255, 215, 0, 0.2);
+            text-align: center;
+            z-index: 10;
+            min-width: 220px;
+            backdrop-filter: blur(5px);
+        }
+
+        .countdown-title {
+            color: #ffd700;
+            font-size: 1.2em;
+            margin-bottom: 8px;
+            text-shadow: 0 0 10px #ffd700;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .countdown-time {
+            color: #ff4500;
+            font-size: 1.6em;
+            font-weight: bold;
+            margin: 4px 0;
+            text-shadow: 0 0 10px #ff4500,
+                        0 0 20px #ff4500;
+            animation: countdownGlow 2s ease-in-out infinite alternate;
+            letter-spacing: 2px;
+        }
+
+        .countdown-info {
+            color: #fff;
+            font-size: 0.9em;
+            margin-top: 4px;
+            text-shadow: 0 0 5px #fff;
+            letter-spacing: 1px;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #0ff,
+                           0 0 20px #0ff,
+                           0 0 30px #0ff;
+            }
+            to {
+                text-shadow: 0 0 20px #0ff,
+                           0 0 30px #0ff,
+                           0 0 40px #0ff;
+            }
+        }
+
+        @keyframes numberGlow {
+            from {
+                text-shadow: 0 0 5px #ffd700,
+                           0 0 10px #ffa500,
+                           0 0 15px #ff8c00;
+            }
+            to {
+                text-shadow: 0 0 10px #ffd700,
+                           0 0 20px #ffa500,
+                           0 0 30px #ff8c00,
+                           0 0 40px #ff4500;
+            }
+        }
+
+        @keyframes rotateMagicCircle {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes rotateMagicCircleReverse {
+            from {
+                transform: rotate(360deg);
+            }
+            to {
+                transform: rotate(0deg);
+            }
+        }
+
+        @keyframes countdownGlow {
+            from {
+                text-shadow: 0 0 10px #ff4500,
+                           0 0 20px #ff4500;
+            }
+            to {
+                text-shadow: 0 0 20px #ff4500,
+                           0 0 30px #ff4500,
+                           0 0 40px #ff4500;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="clocks-wrapper">
+        <div class="clock-container" id="clock1">
+            <div class="digital-clock">
+                <div id="date1"></div>
+                <div id="time1"></div>
+            </div>
+            <div class="analog-clock">
+                <div class="magic-border"></div>
+                <div class="hour-marks"></div>
+                <div class="hour-numbers"></div>
+                <div class="hands">
+                    <div class="hand hour"></div>
+                    <div class="hand minute"></div>
+                    <div class="hand second"></div>
+                </div>
+                <div class="center-dot"></div>
+            </div>
+        </div>
+
+        <div class="countdown-container">
+            <div class="countdown-title">距离高考还有</div>
+            <div class="countdown-time" id="countdown"></div>
+            <div class="countdown-info">加油！未来可期！</div>
+        </div>
+
+        <div class="clock-container" id="clock2">
+            <div class="digital-clock">
+                <div id="date2"></div>
+                <div id="time2"></div>
+            </div>
+            <div class="analog-clock">
+                <div class="magic-border"></div>
+                <div class="hour-marks"></div>
+                <div class="hour-numbers"></div>
+                <div class="hands">
+                    <div class="hand hour"></div>
+                    <div class="hand minute"></div>
+                    <div class="hand second"></div>
+                </div>
+                <div class="center-dot"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 创建时钟刻度的函数
+        function createClockMarks(container) {
+            const hourMarks = container.querySelector('.hour-marks');
+            
+            // 创建60个刻度（12个小时刻度和48个分钟刻度）
+            for (let i = 0; i < 60; i++) {
+                const mark = document.createElement('div');
+                
+                // 每5个刻度是小时刻度
+                if (i % 5 === 0) {
+                    mark.style.transform = `rotate(${i * 6}deg)`;
+                } else {
+                    // 分钟刻度
+                    mark.className = 'minute-mark';
+                    mark.style.transform = `rotate(${i * 6}deg)`;
+                }
+                
+                hourMarks.appendChild(mark);
+            }
+        }
+
+        // 创建时钟数字的函数
+        function createClockNumbers(container) {
+            const hourNumbers = container.querySelector('.hour-numbers');
+            for (let i = 1; i <= 12; i++) {
+                const number = document.createElement('div');
+                number.className = 'hour-number';
+                number.textContent = i;
+                
+                // 计算数字位置
+                const angle = (i * 30) * (Math.PI / 180);
+                const radius = 155;
+                const x = Math.sin(angle) * radius + 200;
+                const y = -Math.cos(angle) * radius + 200;
+                
+                number.style.left = `${x}px`;
+                number.style.top = `${y}px`;
+                
+                hourNumbers.appendChild(number);
+            }
+        }
+
+        // 更新时钟的函数
+        function updateClock(clockId) {
+            const now = new Date();
+            
+            // 更新数字时钟
+            const dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            document.getElementById(`date${clockId}`).textContent = now.toLocaleDateString('zh-CN', dateOptions);
+            document.getElementById(`time${clockId}`).textContent = now.toLocaleTimeString('zh-CN');
+
+            // 更新模拟时钟
+            const container = document.getElementById(`clock${clockId}`);
+            const hours = now.getHours();
+            const minutes = now.getMinutes();
+            const seconds = now.getSeconds();
+
+            const hourDeg = (((hours % 12) * 30) + (minutes * 0.5));
+            const minuteDeg = minutes * 6;
+            const secondDeg = seconds * 6;
+
+            container.querySelector('.hour').style.transform = `rotate(${hourDeg}deg)`;
+            container.querySelector('.minute').style.transform = `rotate(${minuteDeg}deg)`;
+            container.querySelector('.second').style.transform = `rotate(${secondDeg}deg)`;
+        }
+
+        // 初始化两个时钟
+        const clock1 = document.getElementById('clock1');
+        const clock2 = document.getElementById('clock2');
+
+        createClockMarks(clock1);
+        createClockMarks(clock2);
+        createClockNumbers(clock1);
+        createClockNumbers(clock2);
+
+        // 更新两个时钟
+        function updateBothClocks() {
+            updateClock(1);
+            updateClock(2);
+        }
+
+        // 计算高考倒计时
+        function updateCountdown() {
+            const now = new Date();
+            const currentYear = now.getFullYear();
+            
+            // 设置高考日期（每年6月7日）
+            let examDate = new Date(currentYear, 5, 7); // 月份从0开始，所以5表示6月
+            
+            // 如果今年的高考已经过去，就计算明年的
+            if (now > examDate) {
+                examDate = new Date(currentYear + 1, 5, 7);
+            }
+            
+            const timeLeft = examDate - now;
+            
+            // 计算天数、小时、分钟和秒数
+            const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+            
+            // 更新显示
+            document.getElementById('countdown').textContent = 
+                `${days}天 ${hours}时 ${minutes}分 ${seconds}秒`;
+        }
+
+        // 更新所有显示
+        function updateAll() {
+            updateBothClocks();
+            updateCountdown();
+        }
+
+        // 初始更新并设置定时器
+        updateAll();
+        setInterval(updateAll, 1000);
+    </script>
+</body>
+</html>
