@@ -1,0 +1,76 @@
+cholera	[ˈkɒlərə] n. 霍乱
+severe	[sɪˈvɪə(r)] adj. 极为恶劣的；十分严重的；严厉的
+diarrhoea	[ˌdaɪə'rɪə] n. 腹泻
+dehydration	[ˌdi:haɪ'dreɪʃn] n. 脱水
+frustrated	[frʌˈstreɪtɪd] adj. 懊恼的；沮丧的；失意的
+contradictory	[ˌkɒntrəˈdɪktəri] adj. 相互矛盾的；对立的；不一致的
+infection	[ɪnˈfekʃn] n. 感染；传染
+infect	[ɪnˈfekt] vt. 使感染；传染
+germ	[dʒɜ:m] n. 微生物；细菌；病菌
+subscribe	[səbˈskraɪb] vi. 认购（股份）；定期订购；定期交纳（会费）
+proof	[pru:f] n. 证据；证明；检验
+multiple	[ˈmʌltɪpl] adj. 数量多的；多种多样的
+pump	[pʌmp] n. 泵；抽水机；打气筒
+household	[ˈhaʊshəʊld] n. 一家人；家庭；同住一所（套）房子的人
+suspect	[səˈspekt] vt. & vi. 怀疑；疑有；不信任 n. 犯罪嫌疑人；可疑对象
+blame	[bleɪm] vt. 把……归咎于；责怪；指责 n. 责备；指责
+handle	[ˈhændl] n. 把手；拉手；柄 vt. 处理；搬动；操纵（车辆、动物、工具等）
+intervention	[ˌɪntə'venʃn] n. 介入；出面；干涉
+link	[lɪŋk] n. 联系；纽带 vt. 把……连接起来；相关联
+raw	[rɔ:] adj. 未煮的；生的；未经处理的；原始的
+pure	[pjʊə(r)] adj. 干净的；纯的；纯粹的
+substantial	[səbˈstænʃl] adj. 大量的；价值巨大的；重大的
+decrease	[dɪˈkri:s] n. 减少；降低；减少量 vt. & vi. （使大小、数量等）减少；减小；降低
+statistic	[stəˈtɪstɪk] n. [pl.] 统计数字；统计资料；统计学
+transform	[trænsˈfɔ:m] vt. 使改观；使改变形态 vi. 改变；转变
+epidemiology	[ˌepɪˌdi:miˈɒlədʒi] n. 流行病学
+microscope	[ˈmaɪkrəskəʊp] n. 显微镜
+thinking	[ˈθɪŋkɪŋ] n. 思想；思维；见解
+protein	[ˈprəʊti:n] n. 蛋白质
+cell	[sel] n. 细胞；小房间；单间牢房
+virus	[ˈvaɪrəs] n. 病毒
+finding	[ˈfaɪndɪŋ] n. 发现；调查结果；（法律）判决
+initial	[ɪˈnɪʃl] adj. 最初的；开始的；第一的
+vaccine	[ˈvæksi:n] n. 疫苗
+framework	[ˈfreɪmwɜ:k] n. 框架；结构
+theoretical	[ˌθɪəˈretɪkl] framework  理论框架
+solid	[ˈsɒlɪd] adj. 可靠的；固体的；坚实的 n. 固体
+cast	[kɑ:st] vt. (cast, cast) 投射；向……投以（视线、笑容等）；投掷
+shadow	[ˈʃædəʊ] n. 阴影；影子；背光处
+rainbow	[ˈreɪnbəʊ] n. 彩虹
+pour	[pɔ:(r)] vt. 倒出；倾泻；斟（饮料）
+concrete	[ˈkɒŋkri:t] n. 混凝土 adj. 混凝土制的；确实的；具体的
+plasma	[ˈplæzmə] n. 血浆
+aerospace	[ˈeərəʊspeɪs] n. 航空航天工业
+patriotic	[ˌpeɪtriˈɒtɪk] adj. 爱国的
+mechanical	[məˈkænɪkl] adj. 机械的；发动机的；机器的
+mechanic	[məˈkænɪk] n. 机械师；机械修理工
+aviation	[ˌeɪviˈeɪʃn] n. 航空制造业；航空；飞行
+defend	[dɪˈfend] vt. 保卫；防守；辩解
+jet	[dʒet] n. 喷气式飞机
+assistant	[əˈsɪstənt] n. 助理；助手
+in charge	[tʃɑ:dʒ] of  主管；掌管
+missile	[ˈmɪsaɪl] n. 导弹
+leadership	[ˈli:dəʃɪp] n. 领导；领导地位；领导才能
+trace	[treɪs] vt. 追溯；追踪；查出 n. 痕迹；遗迹；踪迹
+outstanding	[aʊtˈstændɪŋ] adj. 优秀的；杰出的；明显的
+gifted	[ˈgɪftɪd] adj. 有天赋的；有天才的；天资聪慧的
+abstract	[ˈæbstrækt, æbˈstrækt] adj. 抽象的；理性的 n. （文献等的）摘要
+steady	[ˈstedi] adj. 稳定的；平稳的；稳步的
+concept	[ˈkɒnsept] n. 概念；观念
+astronomy	[əˈstrɒnəmi] n. 天文学
+telescope	[ˈtelɪskəʊp] n. 望远镜
+besides	[bɪˈsaɪdz] prep. 除……之外（还） adv. 而且；此外
+brilliant	[ˈbrɪliənt] adj. 聪颖的；绝妙的；明亮的
+furthermore	[ˌfɜ:ðəˈmɔ:(r)] adv. 此外；再者
+fault	[fɔ:lt] n. 弱点；过错
+shift	[ʃɪft] n. 改变；转换；轮班 vi. & vt. 转移；挪动；转向
+vivid	[ˈvɪvɪd] adj. 生动的；鲜明的；丰富的
+once and for all	最终地；彻底地
+subscribe to	同意；赞同
+water pump	水泵
+thanks to	幸亏；由于
+break out	（战争、打斗等不愉快的事情）突然开始；爆发
+come down	患（病）；染上（小病）
+astronomer	[əˈstrɒnəmə(r)]n. 天文学家
+above all	最重要的是；尤其是
