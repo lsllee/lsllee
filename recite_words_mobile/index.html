@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#f0f9ff">
+    <title>单词练习游戏</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="tooltip" id="tooltip"></div>
+    
+    <div class="container">
+        <div class="header-container">
+            <div class="header-buttons">
+                <button id="import-words" class="btn">导入单词</button>
+                <button id="start-game" class="btn">开始游戏</button>
+                <button id="export-report" class="btn">导出报告</button>
+                <button id="hint-btn" class="btn hint-btn">提示</button>
+            </div>
+            
+            <h1>根据意思选单词</h1>
+        </div>
+        
+        <input type="file" id="file-input" accept=".txt,.csv">
+        
+        <!-- 添加导入单词弹窗 -->
+        <div id="import-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>选择单词文件</h2>
+                    <span class="close">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div class="file-list-controls">
+                        <button id="refresh-file-list" class="refresh-btn" title="刷新文件列表">🔄 刷新列表</button>
+                    </div>
+                    <div class="file-list-container">
+                        <div id="file-list" class="file-list"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="meaning-container">
+            <div class="mickey-ear mickey-ear-left"></div>
+            <div class="mickey-ear mickey-ear-right"></div>
+            <div style="display: flex; align-items: center;">
+                <p id="current-meaning">点击"开始游戏"按钮开始游戏</p>
+                <button id="pronunciation-btn" class="pronunciation-btn" title="听发音">🔊</button>
+            </div>
+        </div>
+        
+        <div class="bubble-container" id="bubble-container"></div>
+        
+        <div class="game-progress">
+            <span id="progress-text">0/0</span>
+            <div class="progress-bar-container">
+                <div class="progress-bar">
+                    <div class="sparkle-container"></div>
+                </div>
+            </div>
+        </div>
+        
+        <button id="reset" class="btn">重置</button>
+    </div>
+
+    <div class="game-controls">
+        <div class="difficulty-selector">
+            <button class="difficulty-btn active" data-difficulty="easy">简单</button>
+            <button class="difficulty-btn" data-difficulty="medium">中等</button>
+            <button class="difficulty-btn" data-difficulty="hard">困难</button>
+        </div>
+        <div id="accuracy">正确率: 0%</div>
+    </div>
+
+    <div class="characters">
+        <!-- 迪士尼角色装饰元素将由JS生成 -->
+    </div>
+
+    <!-- 模块化的JS文件 -->
+    <script src="js/audio.js"></script>
+    <script src="js/game-data.js"></script>
+    <script src="js/game-effects.js"></script>
+    <script src="js/game-core.js"></script>
+    <script src="js/file-import.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html> 

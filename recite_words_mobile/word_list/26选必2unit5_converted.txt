@@ -1,0 +1,73 @@
+technique	[tekˈni:k] n. 技能；技术；技艺
+organ	[ˈɔ:gən] n. （人或动植物的）器官
+toxin	[ˈtɒksɪn] n. 毒素（尤指细菌产生的致病物质）
+ray	[reɪ] n. 光线；光束；（热、电等）射线
+radiation	[ˌreɪdiˈeɪʃn] n. 辐射；放射线
+acid	[ˈæsɪd] n. 酸 adj. 酸的；酸性的
+minor	[ˈmaɪnə(r)] adj. 较小的；次要的；轻微的
+layer	[ˈleɪə(r)] n. 层；表层；层次
+electric	[ɪˈlektrɪk] adj. 电的；用电的；电动的
+victim	[ˈvɪktɪm] n. 受害者；患者
+swollen	[ˈswəʊlən] adj. （身体部位）肿起的；肿胀的
+swell	[swel] vi. (swelled, swollen) 膨胀；肿胀
+blister	[ˈblɪstə(r)] n. （皮肤上因摩擦、烫伤等引起的）水疱；（金属等表面的）气泡、水泡
+underneath	[ˌʌndəˈni:θ] prep. & adv. 在……底下；隐藏在下面
+nerve	[nɜ:v] n. 神经
+fabric	[ˈfæbrɪk] n. 织物；布料；（社会、机构等的）结构
+loose	[lu:s] adj. 松的；未系紧的；宽松的
+urgent	[ˈɜ:dʒənt] adj. 紧急的；急迫的；急切的
+ease	[i:z] vi. & vt. （使）宽慰；减轻；缓解 n. 容易；舒适；自在
+paramedic	[ˌpærəˈmedɪk] n. 急救医生；护理人员
+swallow	[ˈswɒləʊ] vt. & vi. 吞下；咽下
+wrap	[ræp] vt. 包、裹；（用手臂等）围住
+bathtub	[ˈbɑ:θtʌb] n. 浴缸；浴盆
+bath	[bɑ:θ] n. 洗澡；(BrE=bathtub) 浴缸；浴盆 vt. (NAmE=bathe) 给……洗澡
+slip	[slɪp] vi. 滑倒；滑落；溜走 n. 滑倒；小错误；纸条
+mosquito	[məˈski:təʊ] n. (pl. -oes, -os) 蚊子
+elderly	[ˈeldəli] adj. 年纪较大的；上了年纪的（婉辞）
+carpet	[ˈkɑ:pɪt] n. 地毯
+operator	[ˈɒpəreɪtə(r)] n. 电话接线员；操作员
+ambulance	[ˈæmbjələns] n. 救护车
+delay	[dɪˈleɪ] vi. & vt. 推迟；延期（做某事） vt. 耽误；耽搁 n. 延误；耽搁（的时间）；推迟
+needle	[ˈni:dl] n. 针；缝衣针；注射针；指针
+vital sign	[ˈvaitəl sain] 生命体征
+ward	[wɔ:d] n. 病房
+drown	[draʊn] vi. & vt. （使）淹死；溺死；浸泡；淹没
+ankle	[ˈæŋkl] n. 踝；踝关节
+bleeding	[ˈbli:dɪŋ] n. 流血；失血
+panic	[ˈpænɪk] vi. & vt.（使）惊慌  n. 惊恐；恐慌
+interrupt	[ˌɪntəˈrʌpt] vi. & vt. 打断；打扰  vt. 使暂停；使中断
+scream	[skri:m] vi. & vt. （因愤怒或恐惧）高声喊；大声叫 n. 尖叫；尖锐刺耳的声音
+fellow	[ˈfeləʊ] adj. 同类的；同事的；同伴的；同情况的 n. 男人；家伙；同事；同辈；同类
+diner	[ˈdaɪnə(r)] n. （尤指餐馆的）就餐者
+choke	[tʃəʊk] vi. & vt.（使）窒息；（使）哽咽
+steak	[steɪk] n. 牛排；肉排
+throat	[θrəʊt] n. 咽喉；喉咙
+desperate	[ˈdespərət] adj. 绝望的；孤注一掷的；非常需要的
+slap	[slæp] vt. （用手掌）打、拍 n. （用手掌）打、拍；拍击声
+practical	[ˈpræktɪkl] adj. 切实可行的；实际的；实践的
+obstruction	[əbˈstrʌkʃn] n. 阻碍；堵塞；阻塞物
+fist	[fɪst] n. 拳；拳头
+grab	[græb] vt. 抓住；攫取 n. 抓取；抢夺
+tightly	[ˈtaɪtli] adv. 紧紧地；牢固地；紧密地
+motion	[ˈməʊʃn] n. 运动；移动
+justify	[ˈdʒʌstɪfaɪ] vt. 证明……有道理；为……辩护；是……的正当理由
+welfare	[ˈwelfeə(r)] n. 幸福；福祉；安康；福利
+collapse	[kəˈlæps] vi. （突然）倒塌；（因病等）昏倒
+manual	[ˈmænjuəl] n. 使用手册；说明书 adj. 用手的；手工的；体力的；手控的
+out of shape	[ʃeɪp] 健康状况不好
+foggy	[ˈfɒgi] adj. 有雾的
+suburb	[ˈsʌbɜ:b] n. 郊区；城外
+membership	[ˈmembəʃɪp] n. 会员身份；全体会员；会员人数
+leaflet	[ˈli:flət]n. 散页印刷品；传单；小册子
+sense of touch	触觉
+electric shock	触电；电击
+iv needle	静脉注射针
+vital	sign [ˈvaitəl sain]   生命体征
+sprain	vt. 扭伤（关节） n. 扭伤
+bleed	vi. (bled, bled) 流血；失血
+help sb to	one’s feet  帮助某人站起身来
+tight	adj. 牢固的；紧身的；绷紧的；严密的 adv. 紧紧地；牢固地
+face	up/down  面朝上（朝下）
+sleep in	迟起；睡过头；睡懒觉
+out of	shape [ʃeɪp]  健康状况不好

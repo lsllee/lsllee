@@ -1,0 +1,59 @@
+graph	[græf] n. 图；图表；曲线图
+emission	[iˈmɪʃn] n. 排放物；散发物；排放
+melt	[melt] vi. & vt. （使）融化；熔化；软化
+starve	[stɑ:v] vi. & vt. （使）挨饿；饿死
+seal	[si:l] n. 海豹
+ecology	[iˈkɒlədʒi] n. 生态；生态学
+release	[rɪˈli:s] vt. & n. 排放；释放；发布
+methane	[ˈmi:θeɪn] n. 甲烷；沼气
+carbon	[ˈkɑ:bən] n. 碳
+dioxide	[daɪˈɒksaɪd] n. 二氧化物
+habitable	[ˈhæbɪtəbl] adj. 适合居住的
+sustain	[səˈsteɪn] vt. 维持；遭受；承受住
+sustainable	[səˈsteɪnəbl] adj. 可持续的；合理利用的
+fossil	[ˈfɒsl] n. 化石
+fuel	[ˈfju:əl] n. 燃料；刺激性言行
+comprehensive	[ˌkɒmprɪˈhensɪv] adj. 全部的；所有的；详尽的
+worldwide	[ˈwɜ:ldwaɪd] adv. 遍及全球地 adj. 世界各地的；影响全世界的
+trend	[trend] n. 趋势；趋向；动向
+frequently	[ˈfri:kwəntli] adv. 频繁地；经常
+broadcast	[ˈbrɔ:dkɑ:st] vt. & vi. (broadcast, broadcast) 播送；广播；传播 n. 广播节目；电视节目
+policy	[ˈpɒləsi] n. 政策；方针；原则
+footprint	[ˈfʊtprɪnt] n. 足迹；（某物所占的）空间量；面积
+restrict	[rɪˈstrɪkt] vt. 限制；限定；束缚
+restriction	[rɪˈstrɪkʃn] n. 限制规定；限制法规；约束
+seize	[si:z] vt. 抓住；夺取；控制
+basin	[ˈbeɪsn] n. 流域；盆地；盆
+penguin	[ˈpeŋgwɪn] n. 企鹅
+reform	[rɪˈfɔ:m] vi. & vt. 改革；（使）改正；改造 n. 改革；变革；改良
+undergo	[ˌʌndəˈgəʊ] vt. (underwent, undergone) 经历；经受（变化、不快等）
+implement	[ˈɪmplɪment] vt. 使生效；贯彻；执行
+harmonious	[hɑ:ˈməʊniəs] adj. 和谐的
+moderate	[ˈmɒdərət] adj. 适度的；中等的；温和的 vi. & vt. 缓和；使适中
+submit	[səbˈmɪt] vt. & vi. 提交；呈递；屈服
+annual	[ˈænjuəl] adj. 每年的；一年的 n. 年刊；年鉴
+tropical	[ˈtrɒpɪkl] adj. 热带的；来自热带的
+chaos	[ˈkeɪɒs] n. 混乱；杂乱；紊乱
+on behalf	[bɪˈhɑ:f] of  代表（代替）某人
+nuclear	[ˈnju:kliə(r)] adj. 原子能的；核能的；原子核的
+sensitive	[ˈsensətɪv] adj. 敏感的；善解人意的；灵敏的
+jungle	[ˈdʒʌŋgl] n. （热带）丛林；密林
+smog	[smɒg] n. 烟雾（烟与雾混合的空气污染物）
+originate	[əˈrɪdʒɪneɪt] vi. & vt. 起源；发源；创立
+volume	[ˈvɒlju:m] n. 量；体积；（成套书籍中的）一卷
+garbage	[ˈgɑ:bɪdʒ] n. 垃圾；废物
+enterprise	[ˈentəpraɪz] n. 公司；企业；事业
+restore	[rɪˈstɔ:(r)] vt. 恢复；使复原；修复
+conservation	[ˌkɒnsəˈveɪʃn] n. 对（环境、文物等）保护；保持
+dozen	[ˈdʌzn] n. （一）打；十二个
+regulation	[ˌregjuˈleɪʃn] n. 章程；规章制度
+disposal	[dɪˈspəʊzl] n. 去掉；清除；处理
+inspection	[ɪnˈspekʃn] n. 检查；查看；视察
+fine	[faɪn] vt. 对……处以罚款
+campaign	[kæmˈpeɪn] n. 运动；战役 vi. & vt. 参加运动；领导运动
+waterway	[ˈwɔ:təweɪ] n. 水道；航道
+tolerate	[ˈtɒləreɪt] vt. 忍受；包容；容许
+agenda	[əˈdʒendə] n. 议程表；议事日程
+carbon dioxide	二氧化碳
+fossil fuel	化石燃料（如煤或石油）
+dozens of	许多；很多
