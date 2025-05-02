@@ -1,8 +1,0 @@
-dog - 狗
-cat - 猫
-elephant - 大象
-tiger - 老虎
-lion - 狮子
-monkey - 猴子
-panda - 熊猫
-rabbit - 兔子 
